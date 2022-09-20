@@ -133,7 +133,7 @@ df['age_bins'].value_counts()
 
 
 df['age_bins'] = df['age_bins'].replace({'1 to 3':1,'4 to 14':2,'15 to 28':3,'29 to 90':4,'91 to 365':5})
-
+df['age_bins'] = df['age_bins'].astype('float64')
 
 # In[14]:
 
