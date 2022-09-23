@@ -43,13 +43,13 @@ if check_password():
 
   def prediction(cement,slag,ash,water,superplastic,coarseagg,fineagg,age):  
 
-      if age <= 1 & age <= 3:
+      if age >= 1 & age <= 3:
           age_bins = 1
-      elif age <= 4 & age <= 14:
+      elif age >= 4 & age <= 14:
           age_bins = 2
-      elif age <= 15 & age <= 28:
+      elif age >= 15 & age <= 28:
           age_bins = 3
-      elif age <= 29 & age <= 90:
+      elif age >= 29 & age <= 90:
           age_bins = 4
       else:
           age_bins = 5
